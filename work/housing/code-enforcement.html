@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title> HOUSING - CODE ENFORCEMENT</title>
+
+		<!-- Required meta tags -->
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!--bootstrap-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<!--font-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<!--custom css-->
+		<link href="../../style/main.css" rel="stylesheet">
+
+		<!--jquery for sliding triangle-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src='../../script/script.js'></script>
+
+	</head>
+	<body>
+		<div class="navbar-div">
+			<nav class="navbar navbar-expand-md navbar-dark text-white navbar-style navigation">
+		    	<a class="custom-navbar-brand navigation-link " href="../../index.html"><img class="logo" src="../../assets/universal/logo.png" alt="San José
+   Mayor's Office of
+   Technology & Innovation
+" /></a>
+		    	<button id="hamburger" class="custom-hamburger navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		        	<span class="navbar-toggler-icon"></span>
+		    	</button>
+		    	<div class="collapse navbar-collapse navigation" id="navbarCollapse">
+		        	<ul class="navbar-nav ml-auto justify-content-end group" id="navbar">
+		          		<li class="nav-item">
+		            		<a class="navigation-link" href="../../team.html">TEAM</a>
+		          		</li>
+		          		<li class="nav-item">
+		            		<a class="navigation-link team" href="../../smart-city-vision.html">VISION</a>
+		          		</li>
+		          		<li class="nav-item current_page_item">
+		            		<a class="navigation-link  active" href="../../work.html">OUR WORK <span class="sr-only">(current)</span></a>
+		          		</li>
+		          		<li class="nav-item">
+		            		<a class="navigation-link" href="../../press.html">PRESS</a>
+		          		</li>
+		          		<li class="nav-item">
+		            		<a class="navigation-link" href="../../contact-us.html">CONTACT</a>
+		          		</li>
+		        	</ul>
+		      	</div>
+		    </nav>
+		</div>
+
+		<div id="main" class="custom-container">
+			<div class = "blog-container" >     
+				<div class="breadcrums">
+					<nav class="custom-breadcrumb">
+					  <a class="custom-breadcrumb-item" href="../../work.html">Our Work</a>
+					  <a class="custom-breadcrumb-item" href="../housing-overview.html">Housing</a>
+					  <a class="custom-breadcrumb-item" href="#">Prioritizing housing inspections with big data</a>
+					</nav>
+				</div>
+
+				<h2 class="blog-header">Prioritizing housing inspections with big data</h2>
+				<h5 class="blog-secondary-header">Working with U. Chicago on predictive algorithms to prioritize housing inspections to keep our city safer</h5>
+				<span class="blog-tag"><a class="no-decoration-white" href="../housing-overview.html">HOUSING</a></span>
+				<span class="blog-tag"><a class="no-decoration-white" href="../data-overview.html">DATA</a></span>
+
+				<div class="blog-content">
+					<p class="blog-subheading">What is the problem we are solving?</p>
+					<p>We want to make sure all our residents are living in safe conditions in San Jose. Apartment buildings with multiple dwelling units are inspected by the San Jose Code Enforcement team. However, we don’t have enough inspectors to visit every unit every year, so we have to prioritize which units we inspect first.</p> 
+					<p class="blog-subheading">What did we do?</p>
+					<p>San Jose’s Code Enforcement Office conducts inspections for violations in “multiple housing” units – apartment buildings, fraternity and sorority houses, and hotels.The city had already implemented a tiered approach to inspect high risk properties more frequently. Introduced in 2015, it helped the city to identify serious violations in 59% of inspected properties, up from 46% in 2011-2014. However, we know that we could be even better at catching these violations – and therefore keeping the city safer – if we intelligently used the data we already have to prioritize inspections.</p> 
+					<br>
+					<p>With the support of <a class="no underline" href="https://www.bloomberg.org/">Bloomberg Philanthropies</a>, we engaged University of Chicago’s <a class="no underline" href="https://dssg.uchicago.edu/">Data Science for Social Good </a>team to improve how we inspect these multiple housing units.</p>
+					<img class="blog-img"  src="../../assets/our-work/housing/03-code-enforcement/UChicago-logo.png" alt="University of Chicago logo">
+					<p>University of Chicago’s team spent a few days in San Jose, meeting with code enforcement staff to get advice and input on building the algorithms and go on ride-alongs with inspectors. The team then created more than 100,000 predictive models and back-tested these models against historical data: had we used each one of these predictive models at different points in the past, how good would we have been at catching major violations? Based on this evaluation, the team arrived at one model to conduct field testing.</p> 
+					<img class="blog-img"  src="../../assets/our-work/housing/03-code-enforcement/Current-strategy-inspections-vs-UChicago-model-inspections.png" alt="Two maps comparing the City of San Jose's current strategy towards code enforcement inspections and the University of Chicago's model produced using big data">
+					<p>The Code Enforcement team then spent several months testing the model against a control (our existing tiered approach). The result is an 8% lift in the rate of catching serious violations.</p> 
+					<br>
+					<p>Throughout the process, the University of Chicago team worked closely with city staff, and San Jose is now working on transitioning the predictive model in-house. Head over to UChicago’s Data Science for Social Good blog for a detailed write-up of the project: <a class="no-underline" href="https://dssg.uchicago.edu/2017/07/14/data-driven-inspections-for-safer-housing-in-san-jose-california/"> Data-Driven Inspections for Safer Housing in San Jose, California</a>.</p>
+					<p class="blog-thanks">Thanks to UChicago’s Data Science for Social Good team, Code Enforcement’s Mollie McLeod, and San Jose’s Data Analytics Lead Erica Garaffo for making this project a success.</p> 
+
+				</div>
+			</div>
+		</div>
+		<div class="custom-container footer">
+			<div class="left-footer">
+				<div class="left-footer-text"> 2018 San José Mayor's Office of <br>Technology &amp; Innovation</div>
+		    </div>
+		    <div class="middle-footer">
+		    	<div class="separator"></div>
+		    </div>
+		    <div class="right-footer">
+			   	<div class="right-footer-text">
+			    	<div><a class="footer-link" href="mailto:moti@sanjose.gov">moti@sanjoseca.gov</a></div>
+					<div><a class="footer-link" href="http://www.sanjoseca.gov/mayor">Office of Mayor Sam Liccardo</a></div>
+					<div><a class="footer-link" href="http://www.twitter.com/sjmoti">@SJMOTI</a></div>
+				</div>
+			</div>
+		
+		</div> <!--footer container-->
+
+		<!-- Bootstrap helper libraries -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>
