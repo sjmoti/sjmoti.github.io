@@ -1360,6 +1360,10 @@ td{
   background-position: 25% 25%;
 }
 
+.three-fourths-step{
+  background-position: 75% 75%;
+}
+
 .logos{
   background-position: center;
   background-size: contain;
@@ -1370,11 +1374,11 @@ td{
 
 /*HOUSING*/
 #rent-registry{
-  background-image: url('../assets/our-work/housing/01-rent-registry/Project-hero-rent-registry.png');
+  background-image: url('../assets/our-work/housing/01-rent-registry/project-hero-rent-registry.png');
 }
 
 #renters-rights{
-  background-image: url('../assets/our-work/housing/02-renters-rights-app/Code-for-San-Jose-logo.png');
+  background-image: url('../assets/our-work/housing/02-renters-rights-app/renters-rights-app-hero.jpg');
 }
 
 #code-enforcement{
@@ -1391,37 +1395,41 @@ td{
   background-image: url('../assets/our-work/transportation/02-TIZ/TIZ-hero-image.png');
 }
 
+#vision-zero{
+  background-image: url('../assets/our-work/transportation/03-vision-zero/vision-zero-hero.jpeg');
+}
+
 /* BROADBAND & Digital Inclusion */
 
 #broadband-small-cell{
-  background-image: url('../assets/our-work/broadband-digital-divide/01-broadband-5g/5g-hero-image.png');
+  background-image: url('../assets/our-work/broadband-digital-divide/small-cell-networks/small-cell-networks.jpeg');
 }
 
 #digital-inclusion-fund{
-  background-image: url('../assets/our-work/broadband-digital-divide/02-digital-inclusion-fund/digital-inclusion-hero-image.png');
+  background-image: url('../assets/our-work/broadband-digital-divide/closing-digital-divide/digital-inclusion-fund.jpeg');
 }
 
 #fb-terragraph{
-  background-image: url('../assets/our-work/broadband-digital-divide/Terragraph nodes.jpg');
+  background-image: url('../assets/our-work/broadband-digital-divide/facebook-terragraph/terragraph-nodes.jpg');
 }
 
 #east-side-union{
-  background-image: url('../assets/our-work/broadband-digital-divide/east-side-union.png');
+  background-image: url('../assets/our-work/broadband-digital-divide/east-side-union/east-side-union-wifi.jpeg');
 }
 
 #sprint-1million{
-  background-image: url('../assets/our-work/broadband-digital-divide/Sprint1Million.png');
+  background-image: url('../assets/our-work/broadband-digital-divide/sprint-1million/Sprint1Million.png');
 }
 
 
 #speedUp-SJ{
-  background-image: url('../assets/our-work/broadband-digital-divide/SpeedUp-San-Jose.png');
+  background-image: url('../assets/our-work/broadband-digital-divide/speedUp-SJ/SpeedUp-San-Jose.png');
 }
 
 /*USER FRIENDLY CITY HALL*/
 
 #my-San-Jose{
-  background-image: url('../assets/our-work/user-friendly-city/01-my-san-jose/my-san-jose-hero.jpeg');
+  background-image: url('../assets/our-work/user-friendly-city/01-my-san-jose/my-san-jose-long-logo.jpg');
 }
 
 #uyg-1pt0{
@@ -1429,14 +1437,14 @@ td{
 }
 
 #uyg-2pt0{
-  background-image: url('../assets/our-work/user-friendly-city/02-unleash-your-geek-1.0/Unleash-Your-Geek-hero-image.JPG');
+  background-image: url('../assets/our-work/user-friendly-city/03-unleash-your-geek-2.0/uyg-2-0.jpeg');
 }
 /*DATA*/
 
 /*POLICY */
 
-#broadband-for-all{
-  background-image: url('../assets/our-work/policy/01-broadband-for-all/FCC-broadband.png');
+#equitable-broadband{
+  background-image: url('../assets/our-work/policy/01-equitable-broadband/FCC-broadband.png');
 }
 
 
@@ -1557,6 +1565,11 @@ blog-data
 
 .blog-thanks{
   font-style: italic;
+}
+
+.blog-news-quote{
+  margin-left: 20px;
+  font-style: italic; 
 }
 /* Press*/
 
