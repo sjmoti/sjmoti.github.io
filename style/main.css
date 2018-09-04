@@ -1,4 +1,3 @@
-
 html {
   position: relative;
   min-height: 100%;
@@ -19,77 +18,62 @@ h2{
   font-weight: bold;
 }
 .custom-container {
-  width: 500px;
-  max-width: 500px;
+  width: 425px;
+  max-width: 425px;
 /*width: 100%;*/
   margin-right: auto;
   margin-left: auto;
  /* position: relative;*/
 }
 
-@media screen and (max-width: 576px) {
+
+@media screen and (min-width: 500px) {
   .custom-container {
-    max-width: 500px;
+    width: 425px;
+    max-width: 425px;
   }
-  .row{
-    flex-direction:column;
+  .welcome-text{
+    width: 100%;
   }
+
   .headline-text-padding{
-    width: 500px; 
+    width: 425px; 
   }
-  .work-row{
-    flex-direction: column;
-  }
-  .work-custom-col-lg-4+.work-custom-col-lg-4 {
-    margin-top: 18px;
-  }
-  .custom-col-lg-4+.custom-col-lg-4 {
-    margin-top: 20px;
-  }
-
-
 }
+
+
 @media screen and (min-width: 576px) {
   .custom-container {
+    width: 500px;
     max-width: 500px;
   }
-  .row{
-    flex-direction:column;
+  .welcome-text{
+    width: 75%;
   }
   .headline-text-padding{
     width: 500px; 
   }
-  .work-row{
-    flex-direction: column;
-  }
-  .work-custom-col-lg-4+.work-custom-col-lg-4 {
-    margin-top: 18px;
-  }
-  .custom-col-lg-4+.custom-col-lg-4 {
-    margin-top: 20px;
-  }
 
 }
+
 
 @media screen and (min-width: 768px) {
   .custom-container {
     max-width: 690px;
     width: 640px;
   }
+
+   .welcome-text{
+    width: 75%;
+  }
   .headline-text-padding{
     width: 640px; 
   }
 
- .row{
-    flex-direction:row;
-  }
-  .work-row{
-    flex-direction:row;
-  }
-  .work-custom-col-lg-4+.work-custom-col-lg-4 {
+  /*.work-custom-col-lg-4+.work-custom-col-lg-4 {
     margin-left: 18px;
     margin-top: 0px;
-  }
+  }*/
   .custom-col-lg-4+.custom-col-lg-4 {
     margin-left: 20px;
     margin-top: 0px;
@@ -97,18 +81,6 @@ h2{
 
 }
 
-
-/*@media (min-width: 992px) {
-  .custom-container {
-    max-width: 900px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .custom-container {
-    max-width: 900px;
-  }
-}*/
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #978CBC;
@@ -318,16 +290,6 @@ a.navigation-link.active {
   color: #FBE331;
 }
 
-
-/*
-@media screen and (min-width: 768px) {
-  a.navigation-link.active::after { 
-    content: '\25b2';
-    text-align: center;
-    display: block;
-  }
-}*/
-
 a.footer-link{
   color:#878296;
   text-decoration: none;
@@ -348,14 +310,6 @@ a.footer-link{
   border-width: 0px 6px 6px 6px;
   border-color: #FBE331; 
   bottom:0;
-
-  /*position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100px;
-  height: 2px;
-  background: #fe4902;*/
-
 }
 
 .current_page_item a{
@@ -385,14 +339,6 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30
 .group:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
 *:first-child+html .group { zoom: 1; } /* IE7 */
 
-/*.triangle {
-  content: '\25b2';
-  text-align: center;
-  display: block;
-  @include transition(all .2s ease-in);
-}*/
-
-/*To Delete??*/
 
 a.navigation-link:hover {
   display: block;
@@ -400,7 +346,7 @@ a.navigation-link:hover {
   padding: 0.5rem 1rem;
   color: #FBE331;
 }
-/*_____________________________*/
+
 
 a.no-decoration {
   text-decoration: none;
@@ -549,8 +495,8 @@ a.clear-style:hover .blueArrow-link{
 .welcome-text {
   margin-top:124px;
   margin-bottom: 70px;
-  width: 75%;
 }
+
 /*Mail Chimp*/
 #mc_embed_signup{
   background:none; 
@@ -594,21 +540,20 @@ a.clear-style:hover .blueArrow-link{
   margin-top: 20px;
   margin-bottom: 20px;
   float: left;
-  width: 60%;
-
+  width: 55%;
   border-right: 1px solid #878296;
 }
 
 .right-footer {
   float: right;
-  width: 40%;
+  width: 45%;
 }
 
 .left-footer-text {
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 25px;
+  margin-left: 30px;
   color: #878296 !important;
   font-size: 12px;
 }
@@ -652,6 +597,7 @@ a.clear-style:hover .blueArrow-link{
   margin-left: 20px;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 
@@ -696,14 +642,15 @@ a.clear-style:hover .blueArrow-link{
 
 .custom-col-lg-4 {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   max-width: 33.333333%;
   height:240px;
 
   position: relative;
   max-width: 160px;
   max-height: 240px;
+  margin: 9px;
 }
 
 .card-content {
@@ -724,8 +671,6 @@ a.clear-style:hover .blueArrow-link{
 }
 
 .card-space {
-  /*margin-bottom: 10px;*/
-  /*margin-top: 5px;*/
 }
 
 .bgimage {
@@ -739,7 +684,6 @@ a.clear-style:hover .blueArrow-link{
 
 .bgimage  {
   color:white;
-  /*text-shadow:2px 2px #333;*/
 }
 
 .hero-text {
@@ -952,6 +896,7 @@ a.work-hyperlink:hover {
   justify-content: center;
   align-items: center;
   padding: 9px;
+  flex-direction: row;
 }
 
 .work-card-img {
@@ -976,32 +921,18 @@ a.work-hyperlink:hover {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
   text-align: center;
-  padding: 9px;
 }
 
-/*.work-card > hr {
-  margin-right: 0;
-  margin-left: 0;
-}*/
-
-/*.work-card > .list-group:first-child .list-group-item:first-child {
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.work-card > .list-group:last-child .list-group-item:last-child {
-  border-bottom-right-radius: 0.25rem;
-} 
-*/
 .work-custom-col-lg-4 {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
   height:176px;
   width: 160px;
   position: relative;
   max-width: 160px;
   max-height: 176px;
+  margin: 9px;
 }
 
 .work-card-content {
@@ -1027,8 +958,6 @@ a.work-hyperlink:hover {
 }
 
 .work-card-space {
-  /*margin-bottom: 10px;*/
-  /*margin-top: 5px;*/
 }
 
 .housing-card {
@@ -1452,9 +1381,6 @@ td{
   background-image: url('../assets/our-work/policy/02-ca-sb-649/SB649-hero-image.png');
 }
 
-
-
-/*
 /*
 Custom BreadCrumb
 */
@@ -1505,9 +1431,6 @@ a.custom-breadcrumb-item{
 blog-data
 */
 .blog-container {
-  /*padding-left: 35px;*/
-  /*padding-right: 35px;*/
-  /*padding-top: 5px;*/
 }
 
 .blog-header {
@@ -1556,7 +1479,6 @@ blog-data
   margin-top: 60px;
   margin-bottom: 180px;
   color: #5e5e5e;
-/*  font-family: "Domine";*/
 }
 
 .blog-subheading{
@@ -1610,8 +1532,7 @@ blog-data
   text-align: center;
 }
 
-/*vision
-*/
+/* Vision*/
 .margin-style {
   margin-bottom: 25px;
 }
@@ -1633,4 +1554,3 @@ ol{
  /* font-family: "Domine";*/
   color: #5E5E5E;
 }
-
