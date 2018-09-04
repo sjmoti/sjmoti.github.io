@@ -23,7 +23,8 @@ h2{
 /*width: 100%;*/
   margin-right: auto;
   margin-left: auto;
- /* position: relative;*/
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 
@@ -1169,6 +1170,8 @@ td{
   clear: both;
   margin-bottom: 35px;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .work-item-description {
@@ -1317,7 +1320,7 @@ td{
 /* TRANSPORTATION */
 
 #autonomous-vehicles{
-  background-image: url('../assets/our-work/transportation/01-AVs/AVS-hero-image.png');
+  background-image: url('../assets/our-work/transportation/01-AVs/AVs-hero-image.png');
 }
 
 #tiz{
@@ -1554,3 +1557,4 @@ ol{
  /* font-family: "Domine";*/
   color: #5E5E5E;
 }
+
