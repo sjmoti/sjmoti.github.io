@@ -1,13 +1,14 @@
+
 html {
   position: relative;
   min-height: 100%;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 
 }
 body {
   margin-bottom: 120px; /* Margin bottom by footer height */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
 h2{
@@ -25,6 +26,15 @@ h2{
   margin-left: auto;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+
+@font-face {
+  font-family: "Montserrat script=all rev=1";
+  src: url("https://fonts.gstatic.com/s/montserrat/v12/JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 300;
+  unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 
@@ -902,7 +912,6 @@ a.work-hyperlink:hover {
 
 .work-card-img {
   height: 128px;
-  width: 100%
 }
 
 .work-card {
@@ -1096,7 +1105,6 @@ a.work-hyperlink:hover {
 
 .policy-card:hover .policy-img {
   content: url('../assets/our-work/hover/Policy@1024px.png');
-  background-color: #34197E;
 }
 
 .partnerships-card {
@@ -1198,20 +1206,20 @@ td{
   background-position: left bottom;
   height: 5px;
   flex-grow: 1;
-  margin-bottom: -76px;
-  margin-right: -65px;
+  margin-bottom: -123px;
+  margin-right: -76px;
 }
 .housing-header{
-  content: url('../assets/our-work/normal/Housing@128px.png');
+  content: url('../assets/our-work/normal/HousingForHeader.png');
   height: 128px;
 }
 .city-hall-header{
-  content: url('../assets/our-work/normal/Interacting with City Hall@128px.png');
+  content: url('../assets/our-work/normal/CityHallForHeader.png');
   height: 128px;
 }
 
 .data-header{
-  content: url('../assets/our-work/normal/Data@128px.png');
+  content: url('../assets/our-work/normal/DataForHeader.png');
   height: 128px;
 }
 
@@ -1221,8 +1229,8 @@ td{
   background-position: left bottom;
   height: 5px;
   flex-grow: 1;
-  margin-bottom: -76px;
-  margin-left: -65px;
+  margin-bottom: -123px;
+  margin-left: -76px;
 }
 
 .cut-thru-header-separator-left{
@@ -1231,14 +1239,14 @@ td{
   height: 5px;
   flex-grow: 1;
   margin-bottom: -45px;
-  margin-right: -43px;
+  margin-right: -33px;
 }
 .transportation-header{
-  content: url('../assets/our-work/normal/Transportation@128px.png');
+  content: url('../assets/our-work/normal/TransportationForHeader.png');
   height: 128px;
 }
 .policy-header{
-  content: url('../assets/our-work/normal/Policy@128px.png');
+  content: url('../assets/our-work/normal/PolicyForHeader.png');
   height: 128px;
 }
 .cut-thru-header-separator-right{
@@ -1247,7 +1255,7 @@ td{
   height: 5px;
   flex-grow: 1;
   margin-bottom: -45px;
-  margin-left: -43px;
+  margin-left: -33px;
 }
 .on-the-line-header-separator-left{
   background: url(../assets/our-work/normal/purple-pixel.png);
@@ -1258,7 +1266,7 @@ td{
   margin-right: -65px;
 }
 .inequality-header{
-  content: url('../assets/our-work/normal/Inequality@128px.png');
+  content: url('../assets/our-work/normal/InequalityForHeader.png');
   height: 128px;
 }
 
@@ -1472,7 +1480,6 @@ blog-data
   margin-left:auto;
   margin-right: auto;
   display: block;
-  padding: 5px;
   margin-top: 50px;
   margin-bottom: 50px;
   width:100%;
