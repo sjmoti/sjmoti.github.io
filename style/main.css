@@ -38,81 +38,6 @@ h2{
 }
 
 
-@media screen and (min-width: 500px) {
-  .custom-container {
-    width: 425px;
-    max-width: 425px;
-  }
-  .welcome-text{
-    width: 100%;
-  }
-
-  .headline-text-padding{
-    width: 425px; 
-  }
-
-  .right-footer{
-    width: 48%;
-  }
-  .left-footer{
-    width: 52%;
-  }
-}
-
-
-
-
-@media screen and (min-width: 576px) {
-  .custom-container {
-    width: 500px;
-    max-width: 500px;
-  }
-  .welcome-text{
-    width: 75%;
-  }
-  .headline-text-padding{
-    width: 500px; 
-  }
-  .right-footer{
-    width: 45%;
-  }
-  .left-footer{
-    width: 55%;
-  }
-}
-
-
-@media screen and (min-width: 768px) {
-  .custom-container {
-    max-width: 690px;
-    width: 640px;
-  }
-
-   .welcome-text{
-    width: 75%;
-  }
-  .headline-text-padding{
-    width: 640px; 
-  }
-
-  .right-footer{
-    width: 40%;
-  }
-  .left-footer{
-    width: 60%;
-  }
-
-  /*.work-custom-col-lg-4+.work-custom-col-lg-4 {
-    margin-left: 18px;
-    margin-top: 0px;
-  }*/
-  .custom-col-lg-4+.custom-col-lg-4 {
-    margin-left: 20px;
-    margin-top: 0px;
-  }
-
-}
-
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #978CBC;
@@ -156,6 +81,7 @@ p {
 }
 
 .headline-text-padding{
+  width: 425px; 
   padding: 25px;
   margin: auto;
 }
@@ -233,45 +159,58 @@ a.no-underline{
 }
 
 
-.whiteArrow {
-  content: url('../assets/universal/arrow-white.png');
+.whiteArrow{
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-white.png');
+  background-size: contain;
   width:18px;
   height: 15px;
   margin:auto;
+  margin-bottom:-3px;
 }
 
-
 .purpleArrow {
-  content: url('../assets/universal/arrow-purple.png');
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-purple.png');
+  background-size: contain;
   width:18px;
   height: 15px;
   margin:auto;
-  z-index:10;
+  margin-bottom:-3px;
 }
 
 .purpleArrowDown {
-  content: url('../assets/universal/arrow-purple-down.png');
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-purple-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   width:18px;
   height: 15px;
   margin:auto;
-  z-index:10;
+  margin-bottom: -3px;
 }
 
 .purpleArrowUp {
-  content: url('../assets/universal/arrow-purple-up.png');
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-purple-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
   width:18px;
   height: 15px;
   margin:auto;
-  z-index:10;
+  margin-bottom: -3px;
 }
 
 .blueArrow-link{
-  content: url('../assets/universal/arrow-blue.png');
+  background: url('../assets/universal/arrow-blue.png');
+  background-size: contain;
+  display: inline-block;
+  background-size: contain;
+  width:18px;
+  height: 15px;
   margin:auto;
-  z-index:10;
-  padding-left: 8px;
-  padding-bottom: 3px;
-  width: 26px;
+  margin-bottom:-3px;
+  margin-left: 8px;
 }
 /* NavBar */
 
@@ -411,10 +350,13 @@ a.no-decoration-white {
 }
 
 .default-btn-style:hover .purpleArrow {
-  content: url('../assets/universal/arrow-white.png');
-  width: 18px;
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-white.png');
+  background-size: contain;
+  width:18px;
   height: 15px;
-  margin: auto;
+  margin:auto;
+  margin-bottom:-3px;
 }
 
 .default-btn-alternate-style {
@@ -427,8 +369,15 @@ a.no-decoration-white {
   font-size: 12px;
   padding: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
+.default-btn-alternate-style:hover {
+  color: #34197E;
+  background-color: white;
+  border-color:  white;
+  cursor: pointer;
+}
 
 .thin-border{
   border: 2px solid;
@@ -454,10 +403,13 @@ a.no-decoration-white {
 }
 
 .transparent-btn-style:hover .whiteArrow{
-  content: url('../assets/universal/arrow-purple.png');
-  width: 18px;
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-purple.png');
+  background-size: contain;
+  width:18px;
   height: 15px;
-  margin: auto;
+  margin:auto;
+  margin-bottom:-3px;
 }
 
 .downArrow-btn-style {
@@ -477,10 +429,13 @@ a.no-decoration-white {
 }
 
 .downArrow-btn-style:hover .purpleArrowDown {
-  content: url('../assets/universal/arrow-white-down.png');
-  width: 18px;
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-white-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:18px;
   height: 15px;
-  margin: auto;
+  margin:auto;
 }
 
 .upArrow-btn-style {
@@ -500,31 +455,36 @@ a.no-decoration-white {
 }
 
 .upArrow-btn-style:hover .purpleArrowUp {
-  content: url('../assets/universal/arrow-white-up.png');
-  width: 18px;
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-white-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:18px;
   height: 15px;
-  margin: auto;
+  margin:auto;
 }
 
-a.clear-style{
+.clear-style{
   color: #00A1FF;
   font-weight: bold;
   font-size: 12px;
 }
 
-a.clear-style:hover{
+.clear-style:hover{
   border-bottom-width: 1px;
   border-bottom-color: #00A1FF;
   text-decoration: none;
   color: #0000FF;
 }
 
-a.clear-style:hover .blueArrow-link{
-  content: url('../assets/universal/arrow-true-blue.png');
-
+.clear-style:hover .blueArrow-link{
+  background: url('../assets/universal/arrow-true-blue.png');
+  background-size: contain;
+  display: inline-block;
 }
 /* home page */
 .welcome-text {
+  width: 100%;
   margin-top:124px;
   margin-bottom: 70px;
 }
@@ -572,11 +532,13 @@ a.clear-style:hover .blueArrow-link{
   margin-top: 20px;
   margin-bottom: 20px;
   float: left;
+  width: 52%;
   border-right: 1px solid #878296;
 }
 
 .right-footer {
   float: right;
+  width: 48%;
 }
 
 .left-footer-text {
@@ -674,7 +636,6 @@ a.clear-style:hover .blueArrow-link{
   -webkit-box-flex: 0;
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  max-width: 33.333333%;
   height:240px;
 
   position: relative;
@@ -717,10 +678,10 @@ a.clear-style:hover .blueArrow-link{
 }
 
 .hero-text {
-  margin-top: 30px;
+  margin-top: 20px;
   color : white;
   float: right;
-  padding: 30px 20px 10px 10px; 
+  padding: 20px 10px; 
   display: inline-block;
   width: 50%;
   margin-bottom: 5%;
@@ -931,6 +892,7 @@ a.work-hyperlink:hover {
 
 .work-card-img {
   height: 128px;
+  width: 128px;
 }
 
 .work-card {
@@ -994,7 +956,9 @@ a.work-hyperlink:hover {
 }
 
 .housing-card .housing-img {
-  content: url('../assets/our-work/normal/Housing@1024px.png');
+  background: url('../assets/our-work/normal/Housing@1024px.png');
+  display: inline-block;
+  background-size: contain;
 }
 
 .housing-card:hover {
@@ -1003,7 +967,9 @@ a.work-hyperlink:hover {
 }
 
 .housing-card:hover .housing-img {
-  content: url('../assets/our-work/hover/Housing@1024px.png');
+  background: url('../assets/our-work/hover/Housing@1024px.png');
+  display: inline-block;
+  background-size: contain;
   background-color: #34197E;
 }
 
@@ -1012,7 +978,9 @@ a.work-hyperlink:hover {
 }
 
 .transport-card .transport-img {
-  content: url('../assets/our-work/normal/Transportation@1024px.png');
+  background: url('../assets/our-work/normal/Transportation@1024px.png');
+  display: inline-block;
+  background-size: contain;
 }
 
 .transport-card:hover {
@@ -1021,24 +989,9 @@ a.work-hyperlink:hover {
 }
 
 .transport-card:hover .transport-img {
-  content: url('../assets/our-work/hover/Transportation@1024px.png');
-  background-color: #34197E;
-}
-
-.public-card {
-  color:#5e5e5e;
-}
-.public-card .public-img {
-  content: url('../assets/our-work/normal/Public Safety@1024px.png');
-}
-
-.public-card:hover {
-  background-color: #34197E;
-  color:white;
-}
-
-.public-card:hover .public-img {
-  content: url('../assets/our-work/hover/Public Safety@1024px.png');
+  background: url('../assets/our-work/hover/Transportation@1024px.png');
+  display: inline-block;
+  background-size: contain;
   background-color: #34197E;
 }
 
@@ -1046,7 +999,9 @@ a.work-hyperlink:hover {
   color:#5e5e5e;
 }
 .broadband-dig-div-card .broadband-dig-div-img {
-  content: url('../assets/our-work/normal/Inequality@1024px.png');
+  background: url('../assets/our-work/normal/Inequality@1024px.png');
+  display: inline-block;
+  background-size: contain;
 }
 
 .broadband-dig-div-card:hover {
@@ -1055,7 +1010,9 @@ a.work-hyperlink:hover {
 }
 
 .broadband-dig-div-card:hover .broadband-dig-div-img {
-  content: url('../assets/our-work/hover/Inequality@1024px.png');
+  background: url('../assets/our-work/hover/Inequality@1024px.png');
+  display: inline-block;
+  background-size: contain;
   background-color: #34197E;
 }
 
@@ -1063,7 +1020,9 @@ a.work-hyperlink:hover {
   color:#5e5e5e;
 }
 .user-friendly-ch-card .user-friendly-ch-img {
-  content: url('../assets/our-work/normal/Interacting-with-City-Hall@1024px.png');
+  background: url('../assets/our-work/normal/Interacting-with-City-Hall@1024px.png');
+  display: inline-block;
+  background-size: contain;
 }
 
 .user-friendly-ch-card:hover {
@@ -1072,24 +1031,9 @@ a.work-hyperlink:hover {
 }
 
 .user-friendly-ch-card:hover .user-friendly-ch-img {
-  content: url('../assets/our-work/hover/Interacting-with-City-Hall@1024px.png');
-  background-color: #34197E;
-}
-
-.sustainability-card {
-  color:#5e5e5e;
-}
-.sustainability-card .sustainability-img {
-  content: url('../assets/our-work/normal/Sustainability@1024px.png');
-}
-
-.sustainability-card:hover {
-  background-color: #34197E;
-  color:white;
-}
-
-.sustainability-card:hover .sustainability-img {
-  content: url('../assets/our-work/hover/Sustainability@1024px.png');
+  background: url('../assets/our-work/hover/Interacting-with-City-Hall@1024px.png');
+  display: inline-block;
+  background-size: contain;
   background-color: #34197E;
 }
 
@@ -1097,7 +1041,9 @@ a.work-hyperlink:hover {
   color:#5e5e5e;
 }
 .data-card .data-img {
-  content: url('../assets/our-work/normal/Data@1024px.png');
+  background: url('../assets/our-work/normal/Data@1024px.png');
+  display: inline-block;
+  background-size: contain;
 }
 
 .data-card:hover {
@@ -1106,7 +1052,9 @@ a.work-hyperlink:hover {
 }
 
 .data-card:hover .data-img {
-  content: url('../assets/our-work/hover/Data@1024px.png');
+  background: url('../assets/our-work/hover/Data@1024px.png');
+  display: inline-block;
+  background-size: contain;
   background-color: #34197E;
 }
 
@@ -1114,7 +1062,9 @@ a.work-hyperlink:hover {
   color:#5e5e5e;
 }
 .policy-card .policy-img {
-  content: url('../assets/our-work/normal/Policy@1024px.png');
+  background: url('../assets/our-work/normal/Policy@1024px.png');
+  display: inline-block;
+  background-size: contain;
 }
 
 .policy-card:hover {
@@ -1123,26 +1073,11 @@ a.work-hyperlink:hover {
 }
 
 .policy-card:hover .policy-img {
-  content: url('../assets/our-work/hover/Policy@1024px.png');
-}
-
-.partnerships-card {
-  color:#5e5e5e;
-}
-.partnerships-card .partnerships-img {
-  content: url('../assets/our-work/normal/Partnerships@1024px.png');
-}
-
-.partnerships-card:hover {
-  background-color: #34197E;
-  color:white;
-}
-
-.partnerships-card:hover .partnerships-img {
-  content: url('../assets/our-work/hover/Partnerships@1024px.png');
+  background: url('../assets/our-work/hover/Policy@1024px.png');
+  display: inline-block;
+  background-size: contain;
   background-color: #34197E;
 }
-
 
 /* VISION */
 
@@ -1584,3 +1519,50 @@ ol{
   color: #5E5E5E;
 }
 
+
+@media screen and (min-width: 576px) {
+  .custom-container {
+    width: 500px;
+    max-width: 500px;
+  }
+  .welcome-text{
+    width: 90%;
+  }
+  .headline-text-padding{
+    width: 500px; 
+  }
+  .right-footer{
+    width: 45%;
+  }
+  .left-footer{
+    width: 55%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .custom-container {
+    max-width: 690px;
+    width: 640px;
+  }
+
+   .welcome-text{
+    width: 75%;
+  }
+  .headline-text-padding{
+    width: 640px; 
+  }
+
+  .right-footer{
+    width: 40%;
+  }
+  .left-footer{
+    width: 60%;
+  }
+
+  .custom-col-lg-4+.custom-col-lg-4 {
+    margin-left: 20px;
+    margin-top: 0px;
+  }
+
+}
