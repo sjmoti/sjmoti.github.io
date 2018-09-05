@@ -38,28 +38,6 @@ h2{
 }
 
 
-@media screen and (max-width: 500px) {
-  .custom-container {
-    width: 425px;
-    max-width: 425px;
-  }
-  .welcome-text{
-    width: 100%;
-  }
-
-  .headline-text-padding{
-    width: 425px; 
-  }
-
-  .right-footer{
-    width: 48%;
-  }
-  .left-footer{
-    width: 52%;
-  }
-}
-
-
 @media screen and (min-width: 500px) {
   .custom-container {
     width: 425px;
