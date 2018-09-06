@@ -379,6 +379,11 @@ a.no-decoration-white {
   cursor: pointer;
 }
 
+.email-address-btn-box:hover {
+  color: white;
+  background-color: #34197E;
+}
+
 .thin-border{
   border: 2px solid;
   font-size: 12px;
