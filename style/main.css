@@ -700,14 +700,8 @@ a.no-decoration-white {
 .work-showcase-bg{
   color: white;
   height: 160px;
-  background: url('../assets/our-work/work-showcase-module.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
   display: table;
-  margin-left: calc(50% - 50vw);
-  width: 100vw;
-
+  width: 100%;
 }
  
 
@@ -733,9 +727,6 @@ a.no-decoration-white {
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-/*  display: table;*/
-  /*margin-left: calc(50% - 50vw);
-  width: 100vw;*/
 }
 
 .get-update h2 {
@@ -1355,6 +1346,7 @@ Custom BreadCrumb
 }
 
 .custom-breadcrumb {
+  font-family: 'Domine';
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1436,6 +1428,15 @@ blog-data
   margin-top: 50px;
   margin-bottom: 50px;
   width:100%;
+}
+
+.blog-img-logo {
+  margin-left:auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 .blog-content {
