@@ -52,7 +52,7 @@ function showInfoInitial(data) {
 			' </span>')
 		press_i.appendTo("#press-items");
         })
-	activeTabIndicator();
+	//activeTabIndicator();
 }
 
 var clickCounter = 1;
@@ -93,6 +93,6 @@ function showInfoAll(data) {
 		document.getElementById("all-stories-arrow-btn").classList.add('purpleArrowDown');
 		clickCounter = 1;
 	}
-	activeTabIndicator();
+	//activeTabIndicator();
 }
 	
