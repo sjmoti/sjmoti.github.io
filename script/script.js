@@ -42,10 +42,10 @@ function activeTabIndicator() {
 
 		currentElement = $(".current_page_item a");
 
-		console.log("Page name ---> " + currentElement.text());
+		//console.log("Page name ---> " + currentElement.text());
 		var pageName = currentElement.text();
 
-		if(pageName === "HOME (current)") {
+		if(pageName === "HOME (current)" || !pageName ) {
 			var group = $(".group");
 			isHomePage.css("display", "none");
 			leftPos = $(window).width();
