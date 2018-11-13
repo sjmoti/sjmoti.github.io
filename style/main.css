@@ -670,11 +670,18 @@ a.no-decoration-white {
 
 .bgimage {
   width:100%;
-/*height:256px;
-  background: url('../assets/home/mayor-img.png');
+  height:256px;
+/*background: url('../assets/home/mayor-img.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;*/
+}
+
+.banner-images{
+  height: 256px;
+  position: absolute;
+  z-index: -1;
+  width: 425px;
 }
 
 .bgimage  {
@@ -1532,6 +1539,9 @@ ol{
     width: 500px;
     max-width: 500px;
   }
+  .banner-images{
+    width: 500px;
+  }
   .welcome-text{
     width: 90%;
   }
@@ -1551,6 +1561,10 @@ ol{
   .custom-container {
     max-width: 690px;
     width: 640px;
+  }
+
+  .banner-images{
+    width:640px;
   }
 
    .welcome-text{
