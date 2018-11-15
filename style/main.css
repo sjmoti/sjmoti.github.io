@@ -682,6 +682,7 @@ a.no-decoration-white {
   position: absolute;
   z-index: -1;
   width: 425px;
+  object-fit: cover;
 }
 
 .bgimage  {
