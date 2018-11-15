@@ -783,11 +783,11 @@ a.no-decoration-white {
 
   width:100%;
   height:256px;
-  background: url('../assets/team/team-banner.jpg');
+  /*background: url('../assets/team/team-banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  display: table;
+  display: table;*/
 }
 .team-img {
   padding: 2%;
@@ -1090,8 +1090,8 @@ a.work-hyperlink:hover {
   /*background: url('../assets/vision/vision-banner.jpeg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover;*/
-  display:table;
+  background-size:cover;
+  display:table;*/
 }
 
 
