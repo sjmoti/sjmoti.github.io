@@ -1082,6 +1082,100 @@ a.work-hyperlink:hover {
   background-color: #34197E;
 }
 
+.website-card .website-img {
+  background: url('../assets/our-work/normal/website-img.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.website-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.website-card:hover .website-img {
+  background: url('../assets/our-work/hover/website-img-white.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+
+.news-card .news-img {
+  background: url('../assets/our-work/normal/news-img.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.news-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.news-card:hover .news-img {
+  background: url('../assets/our-work/hover/news-img-w.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+
+.advisory-card .advisory-img {
+  background: url('../assets/our-work/normal/advisory-img.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.advisory-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.advisory-card:hover .advisory-img {
+  background: url('../assets/our-work/hover/advisory-img-w.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+.airbnb-card .airbnb-img {
+  background: url('../assets/our-work/normal/airbnb-img.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.airbnb-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.airbnb-card:hover .airbnb-img {
+  background: url('../assets/our-work/hover/airbnb-img-w.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+
+.uyg-card .uyg-img {
+  background: url('../assets/our-work/normal/uyg.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.uyg-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.uyg-card:hover .uyg-img {
+  background: url('../assets/our-work/hover/uyg-w.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+
 /* VISION */
 
 
