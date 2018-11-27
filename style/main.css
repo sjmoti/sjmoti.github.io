@@ -1283,6 +1283,11 @@ td{
   height: 128px;
 }
 
+.uyg-header{
+  content: url('../assets/our-work/normal/uyg.png');
+  height: 128px;
+}
+
 .data-header{
   content: url('../assets/our-work/normal/DataForHeader.png');
   height: 128px;
@@ -1443,6 +1448,10 @@ td{
 
 #uyg-2pt0{
   background-image: url('../assets/our-work/user-friendly-city/03-unleash-your-geek-2.0/uyg-2-0.jpeg');
+}
+
+#uyg-3pt0{
+  background-image: url('../assets/meet-and-greet/uyg-3.jpg');
 }
 /*DATA*/
 
