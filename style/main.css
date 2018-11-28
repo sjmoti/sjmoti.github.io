@@ -1188,6 +1188,23 @@ a.work-hyperlink:hover {
   background-color: #34197E;
 }
 
+.fcc-policy-card .fcc-policy-img {
+  background: url('../assets/our-work/normal/policy-img.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.fcc-policy-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.fcc-policy-card:hover .fcc-policy-img {
+  background: url('../assets/our-work/hover/policy-img-w.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
 
 /* VISION */
 
