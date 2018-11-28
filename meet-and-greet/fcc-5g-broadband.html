@@ -22,7 +22,101 @@
 
 		<!--jquery for sliding triangle-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src='../../script/script.js'></script>
+		<style>
+		/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #34197E;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #34197E;
+    border: 4px solid #FFFFFF;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    margin: 0px;
+}
+
+/* Place the container to the right */
+.right {
+    left: 26%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -18px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: #34197E;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+}
+
+		</style>
 
 	</head>
 	<body>
@@ -47,14 +141,48 @@
 					</nav>
 				</div>
 
-				<h2 class="blog-header">Fighting California State Bill 649</h2>
+				<h2 class="blog-header">FCC, 5G & National Broadband Policy</h2>
 				<h5 class="blog-secondary-header">Technology has become pervasive in our lives, so there’s more technology policy work than ever to be done. As expected, we work on city policy, but as the largest city in Silicon Valley, San José also has taken a leadership role in several state and federal level technology policy issues.</h5>
 				<div class="blog-content">
-					<p>As Mayor Sam Liccardo wrote in <a class="no-underline" href="https://www.nytimes.com/2017/10/03/opinion/wireless-verizon-telephone-poles.html">his New York Times op-ed</a>, “Public street poles may not look like much, but to wireless service providers, they’re valuable real estate.” Telecoms want to install wifi equipment on light poles, but cities are careful not to subsidize industry with taxpayer dollars by giving access at below-market rates. </p>
-					<img class="blog-img"  src="../../assets/our-work/policy/02-ca-sb-649/SB649-hero-image.png" alt="A street pole seen from below, with clouds in the background">
-					<p>Telecoms simultaneously introduced bills in 20 states that would preempt cities from being able to give input on how, when, and where small cells can be deployed. Essentially, the public would not have input if a refrigerator-sized device shows up on the light pole outside their homes. To be clear, we want next generation broadband to be deployed, we simply think that the public should have a voice.</p> 
-					<p>There was enough political support in the senate for the bill, but San José took leadership and helped organize many of California’s cities to put our recommendation forward to Governor Brown. In the end, Governor Brown made the decision to veto the bill so a more balanced one could be drafted.</p>
-					<!--<p class="blog-thanks">Thanks to all of the 200+ California cities who opposed SB 649, and especially to some of our fellow largest cities that wrote to Senator Hueso with our concerns for the bill.</p> -->
+					<h6>Here is what has happened so far this year (<a href="#details">More details here</a>):</h6>
+					<div class="timeline">
+  						<div class="container left">
+    						<div class="content">
+      							<h2>January</h2>
+      							<p style="color: white;">Mayor Liccardo <a href="https://moti.sanjosemayor.org/wp-content/uploads/2018/10/liccardo-fcc-committee-resignation-letter-2.pdf">resigns from FCC Broadband Deployment Advisory Committee</a>, citing overwhelming industry influence</p>
+    						</div>
+  						</div>
+						<div class="container right">
+							<div class="content">
+						    	<h2>September</h2>
+						    	<p style="color: white;">FCC <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=9&cad=rja&uact=8&ved=2ahUKEwio7YCblPjeAhVRIjQIHQWxB-kQFjAIegQIAxAB&url=https%3A%2F%2Fwww.cnet.com%2Fnews%2Ffcc-limits-fees-for-5g-deployment%2F&usg=AOvVaw0DEH6h-dwsHmMTRIiQjkxq">releases rules limiting local control</a>, restricting cities’ abilities to regulate 5G infrastructure, justifying them as the key to speeding their deployment while creating really short deadlines for approval and limiting how much cities can charge companies’ for their public infrastructure.</p>
+						    </div>
+						</div>
+						<div class="container left">
+							<div class="content">
+						    	<h2>October</h2>
+						    	<p style="color: white;">San José, with 20+ cities and organizations, files a lawsuit <a href="https://arstechnica.com/tech-policy/2018/10/cities-will-sue-fcc-to-stop-2-billion-giveaway-to-wireless-carriers/">challenging the overreach of these FCC rules</a>.</p>
+						    </div>
+						</div>
+						<div class="container right">
+							<div class="content">
+						    	<h2>November</h2>
+						      	<p style="color: white;">Mayor Liccardo publishes an <a href="https://www.nytimes.com/2018/11/08/.../low-income-san-jose-california-broadband.html">op-ed in the New York Times</a> on this issue. FCC Commissioner Carr responds with his own <a href="https://www.mercurynews.com/2018/11/14/opinion-how-san-joses-5g-approach-blocks-broadband/">op-ed in The Mercury News</a>. Mayor Liccardo scrutinizes these falsehoods on his own <a href="https://www.mercurynews.com/2018/11/20/opinion-liccardo/">op-ed in the Mercury News</a> and Shireen publishes an <a href="https://www.citylab.com/perspective/2018/11/fcc-broadband-5g-inequality-san-jose/576499/">op-ed on CityLab</a> laying out how the FCC has sold us out on this issue. </p>
+						    </div>
+						</div>
+					</div>
+					<br/>
+					<span id="details"></span><br/><br/><br/>
+					<h6>Our work Influencing Policy:</h6><br/><br/><br/>
+					<p>In 2017, Mayor Liccardo was appointed to the <a href="https://www.fcc.gov/broadband-deployment-advisory-committee">FCC’s Broadband Deployment Advisory Committee</a>, a national body of community and business leaders that recommends policies to the FCC around broadband. However, the body was stacked with industry personnel with <a href="https://moti.sanjosemayor.org/wp-content/uploads/2018/10/liccardo-fcc-committee-resignation-letter-2.pdf">few local government voices advocating for the public</a>. After working in good faith for over 9 months on the body and despite the best effort of many individuals, in January of 2018, Mayor Liccardo <a href="https://moti.sanjosemayor.org/wp-content/uploads/2018/10/liccardo-fcc-committee-resignation-letter-2.pdf">resigned from the committee</a>, citing his frustration with the group’s clear bias toward serving industry interest.</p>
+					<p>We didn’t walk away from this fight - in fact we raised our concerns in Congress and the Senate. Here at home in San José, we doubled down to make sure our residents received improved broadband service and took steps to address the digital divide. We recently signed deals to get over <a href="https://moti.sanjosemayor.org/broadband-digital-divide/small-cell-networks/">$500M in broadband investment into San José</a> and set up a <a href="https://moti.sanjosemayor.org/broadband-digital-divide/closing-digital-divide/">Digital Inclusion fund</a> to bridge the digital divide with initiatives like <a href="https://moti.sanjosemayor.org/our-work/broadband-digital-divide/east-side-union-wifi/">internet access for students in East Side Union High School District</a>.
+</p>
+					<img class="blog-img"  src="../assets/meet-and-greet/esuhsd-kids.jpg" alt="Overfelt High School students, from right, Santiago Rivera, 16, Juan Bailon, 15, Nicho Dimas,15, and Imani Kilgore, 16, socialize and work on Chromebooks at the Overfelt High School Library in San Jose, Calif., on Saturday, October 1, 2016. (LiPo Ching/Bay Area News Group)"/>
+					<p style="font-size:10px;color=grey;">Overfelt High School students, from right, Santiago Rivera, 16, Juan Bailon, 15, Nicho Dimas,15, and Imani Kilgore, 16, socialize and work on Chromebooks at the Overfelt High School Library in San Jose, Calif., on Saturday, October 1, 2016. (LiPo Ching/Bay Area News Group)</p>
+					<p>However, in late September of this year, the FCC released new rules restricting cities’ abilities to regulate 5G infrastructure, justifying them as the key to speeding their deployment. Under these new rules, local governments face tight deadlines to approve or reject the installation of this new cellular equipment. The rules also put limits on how much money cities can charge wireless firms for the privilege of putting hardware in public rights of way. The rules also directly endangered our deals with the telecommunication companies, especially the portion that would go towards our <a href="https://moti.sanjosemayor.org/broadband-digital-divide/closing-digital-divide/">Digital Inclusion fund</a> and related programs. In facing these new rules, in October, we joined over 20 cities, as well as the U.S. Conference of Mayors, the National League of Cities, and the National Association of Counties in filing a lawsuit against the FCC over these new rules. You can read more from Ars Technica here: <a href="https://arstechnica.com/tech-policy/2018/10/cities-will-sue-fcc-to-stop-2-billion-giveaway-to-wireless-carriers/">Cities will sue FCC to stop $2 Billion giveaway to wireless carriers</a>.</p>
+					<img class="blog-img"  src="../assets/meet-and-greet/small cells composite.jpg" alt="Photo: Small Cells being connected to fiber, and later fully deployed in San José City Hall Plaza. It has the typically antenna top (top hat), two small grey radios (mid pole), and one electrical shut off box. It is painted a light gray and is unobtrusive."/>
+					<p style="font-size:10px;color=grey;">Photo: Small Cells being connected to fiber, and later fully deployed in San José City Hall Plaza. It has the typically antenna top (top hat), two small grey radios (mid pole), and one electrical shut off box. It is painted a light gray and is unobtrusive.</p> 
+					<p>This month, <a href="https://www.nytimes.com/2018/11/08/.../low-income-san-jose-california-broadband.html">Mayor Liccardo’s New York Times op-ed</a>, detailed how the FCC’s recent policies force “a taxpayer subsidy to Big Telecom companies”. In response, FCC Commissioner Brendan Carr,  a Republican appointee to the FCC under the current President, who voted alongside FCC Chairman Pai <a href="https://www.recode.net/2017/12/14/16777356/full-transcript-ajit-pai-brendan-carr-fcc-statements-net-neutrality-repeal">to repeal net neutrality</a> and who previously represented Big Telecom clients, mounted an attack with an <a href="https://www.mercurynews.com/2018/11/14/opinion-how-san-joses-5g-approach-blocks-broadband/">op-ed in the Mercury News</a> to condemn our “record of broadband failure”. You can read Mayor Liccardo’s response op-ed, where he scrutinizes the falsehoods in Carr’s op-ed: <a href="https://www.mercurynews.com/2018/11/20/opinion-liccardo/">Opinion: FCC proves it doesn’t get the innovation economy</a>. You can also read Shireen's op-ed on the issue published early this week: <a href="https://www.citylab.com/perspective/2018/11/fcc-broadband-5g-inequality-san-jose/576499/">Hey FCC, Low-Income Americans Need Broadband Too</a>.</p>
 
 				</div>
 			</div>
