@@ -24,6 +24,28 @@
 		<!--jquery for sliding triangle-->
 		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src='script/script.js'></script> -->
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function(){
+				var sib = document.getElementById("show-icon-bib");
+				sib.addEventListener("click", showIconBib);
+			})
+			function showIconBib(data) {
+				var sib = document.getElementById("show-icon-bib");
+				var bib = document.getElementById("bib");
+				if(bib.classList.contains('hidden')){
+					bib.classList.add('shown');
+					bib.classList.remove('hidden');
+					document.getElementById("show-icon-bib-txt").textContent='Hide Icon Bibliography';
+				}
+				else if(bib.classList.contains('shown')){
+					bib.classList.add('hidden');
+					bib.classList.remove('shown');
+					document.getElementById("show-icon-bib-txt").textContent='Show Icon Bibliography';
+				}
+			}
+			
+		</script>
 	</head>
 	<body>
 		<div class="navbar-div">
@@ -157,6 +179,8 @@
 			            </div><!--/span-->
 					</div>
 				</div>
+				<p><a id="show-icon-bib" class="no-underline" href="#show-icon-bib"><span id="show-icon-bib-txt">Show Icon Bibliography</span></a></p>
+				<p id="bib" class="hidden">website by Rose Alice Design from the Noun Project<br/>Meeting by Jesus Puertas from the Noun Project<br/>newsletter by Dinosoft Labs from the Noun Project<br/>Door by Mathijs Boogaert from the Noun Project</p>
 			</div><!--blog container-->
 		</div>	
 		<div class="custom-container footer">

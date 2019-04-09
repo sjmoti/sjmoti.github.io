@@ -78,6 +78,11 @@ p {
   font-size: 34px;
 }
 
+.primary-text-uyg{
+  font-size: 18;
+  font-weight: bold;
+}
+
 .headline-text-padding{
   width: 425px; 
   padding: 25px;
@@ -331,6 +336,7 @@ a.no-decoration-white {
   text-transform: uppercase;
 }
 /* button */
+
 
 .default-btn-style {
   color:#34197E;
@@ -770,7 +776,11 @@ a.no-decoration-white {
   text-align: center;
 }
 
-
+.unleash-your-geek-btn-div {
+  padding-top: 14px;
+  padding-bottom: 36px;
+  text-align: center;
+}
 
 /* team page */
 
@@ -1283,6 +1293,9 @@ td{
   height: 128px;
   align-items: center;
 }
+
+
+
 .header-separator-left{
   background: url('../assets/our-work/normal/purple-pixel.png');
   background-position: left bottom;
@@ -1611,7 +1624,13 @@ blog-data
   font-weight: bold;
 }
 
+.hidden{
+  display: none;
+}
 
+.shown{
+  display: block;
+}
 /*CONTACT*/
 
 .contact-hero-image {
@@ -1683,6 +1702,343 @@ ol{
   color: #5E5E5E;
 }
 
+/*Meet and Greet Scratchpad*/
+
+.uyg-font{
+  font-family: "Domine";
+  color:#34197E;
+  margin: 0 auto;
+}
+
+#cf {
+  position:relative;
+  width: 200px;
+  height: 200px;
+  margin:0 auto;
+  padding-top: 10px;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  width: 200px;
+height: 190px;
+}
+
+#cf-uyg-landing {
+  position:relative;
+  height:200px;
+  width:200px;
+  margin:0 auto;
+  padding-top: 10px;
+}
+
+#cf-uyg-landing  img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  width: 200px;
+}
+
+@keyframes cfFadeOut {
+  0% {
+    opacity:0;
+  }
+  45% {
+    opacity:0;
+  }
+  55% {
+    opacity:1;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#cf img.top {
+animation-name: cfFadeOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-direction: alternate;
+}
+
+#cf-uyg-landing img.top {
+animation-name: cfFadeOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: 1;
+animation-duration: 1.5s;
+animation-direction: alternate;
+}
+
+/*Unleash Your Geek Competition Page*/
+
+.uyg-3-hero-image {
+  width:100%;
+  height:256px;
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/uyg-3-banner-housing-filtered.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  display:table;
+}
+
+.uyg-submission-hero-image {
+  width:100%;
+  height:256px;
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/backlit-bulb-clouds-1314410.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  display:table;
+}
+
+.uyg-competition-icon-parent {
+  display: flex;
+  height: 171px;
+  align-items: center;
+  justify-content: center;
+}
+
+.uyg-competition-icon{
+  content: url('https://moti.sanjosemayor.org/wp-content/uploads/2018/10/Housing@1024px.png');
+  height: 171px;
+}
+
+.uyg-competition-btns-container{
+  padding-top: 28px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.uyg-resources-div {
+  align-items: center;
+  text-align: center;
+}
+
+.research-card {
+  color:#5e5e5e;
+}
+
+.research-card .research-img {
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/research-icon-512.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.research-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.research-card:hover .research-img {
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/research-w-icon.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+.design-card {
+  color:#5e5e5e;
+}
+
+.design-card .design-img {
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/design-icon-512.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.design-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.design-card:hover .design-img {
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/design-w-icon.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+.create-card {
+  color:#5e5e5e;
+}
+
+.create-card .create-img {
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/create-icon-512.png');
+  display: inline-block;
+  background-size: contain;
+}
+
+.create-card:hover {
+  background-color: #34197E;
+  color:white;
+}
+
+.create-card:hover .create-img {
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/create-w-icon.png');
+  display: inline-block;
+  background-size: contain;
+  background-color: #34197E;
+}
+
+.uyg-submission-btn-text {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.large-uyg-btn-style {
+  color: #34197E;
+  background-color: transparent;
+  border: 2px solid;
+  border-radius: 0px;
+  border-color: #34197E;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+}
+
+.purpleArrow-large-uyg-btn {
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-purple.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:20px;
+  height: 16.6666px;
+  margin:auto;
+  margin-bottom: -3px;
+}
+
+.large-uyg-btn-style:hover {
+  color:white;
+  background-color: #34197E;
+  border-color: #34197E;
+}
+
+.large-uyg-btn-style:hover .purpleArrow-large-uyg-btn {
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:20px;
+  height: 16.6666px;
+  margin:auto;
+  margin-bottom:-3px;
+}
+
+
+.uyg-past-challenges-div {
+  align-items: center;
+  text-align: center;
+}
+
+
+.uyg-past-challenges-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 128px;
+  width: 128px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.uyg-past-challenges-col-lg-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  height:128px;
+  width: 128px;
+  position: relative;
+  max-width: 128px;
+  max-height: 128px;
+  margin: 9px;
+}
+
+.uyg-1-card .uyg-1-card-img{
+  background:   url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/uyg-1.0-normal.png');
+  background-size: contain;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.uyg-1-card:hover  .uyg-1-card-img{
+
+  background: 
+    linear-gradient(
+      rgba(52, 25, 126, 0.45), 
+      rgba(52, 25, 126, 0.45) 
+    ),
+  url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/uyg-1.0-normal.png');
+}
+
+.uyg-2-card .uyg-2-card-img{
+  background: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/uyg-2.0-normal.png');
+  background-size: contain;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+
+.uyg-2-card:hover .uyg-2-card-img{
+  background: 
+  linear-gradient(
+      rgba(52, 25, 126, 0.45), 
+      rgba(52, 25, 126, 0.45) 
+    ),
+  url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/uyg-2.0-normal.png');
+}
+
+a.uyg-past-challenge-hyperlink {
+  color: #5e5e5e;
+}
+
+
+a.uyg-past-challenge-hyperlink:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a.uyg-past-challenge-hyperlink span{
+  visibility: hidden;
+}
+
+a.uyg-past-challenge-hyperlink:hover span{
+  visibility: visible;
+  text-decoration: none;
+  color: white;
+}
+
+.uyg-past-challenges-txt{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+
+
+.uyg-past-challenges-card-img {
+  height: 128px;
+  width: 128px;
+  display: table;
+}
 
 @media screen and (min-width: 576px) {
   .custom-container {
