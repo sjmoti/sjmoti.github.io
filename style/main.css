@@ -2032,13 +2032,29 @@ a.uyg-past-challenge-hyperlink:hover span{
 
 }
 
-
-
 .uyg-past-challenges-card-img {
   height: 128px;
   width: 128px;
   display: table;
 }
+
+.research-header{
+  content: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/research-icon-512-for-header.png');
+  height: 128px;
+}
+
+.design-header{
+  content: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/design-icon-512-for-header.png');
+  height: 128px;
+}
+
+.create-header{
+  content: url('https://moti.sanjosemayor.org/wp-content/uploads/2019/04/create-icon-512-for-header.png');
+  height: 128px;
+}
+
+
+/* Media Queries*/
 
 @media screen and (min-width: 576px) {
   .custom-container {
