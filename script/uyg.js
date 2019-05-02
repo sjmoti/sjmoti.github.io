@@ -1,18 +1,10 @@
 $(document).ready(function() {
 
 
-function typeWrite(){
-	if (i< txt.length){
-		document.getElementById("uyg-text").innerHTML += txt.charAt(i);
-		i++;
-		setTimeout(typeWrite, speed);
-	}
-}
-
-var i = 0;
-var txt = 'Unleash Your Geek!'
-var speed = 50;
-typeWrite();
+	var mb1 = document.getElementById("learn-more-services-location-btn");
+	var mb2 = document.getElementById("learn-more-empathy-btn");
+	var mb3 = document.getElementById("learn-more-job-match-btn");
+	
 
 
 });

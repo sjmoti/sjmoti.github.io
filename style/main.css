@@ -66,6 +66,12 @@ p {
   margin-bottom: 28px;
 }
 
+.secondary-headline-no-top {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 28px;
+}
+
 .more-top-margin{
   margin-top: 44px;
 }
@@ -78,9 +84,23 @@ p {
   font-size: 34px;
 }
 
+
+
 .primary-text-uyg{
   font-size: 18;
   font-weight: bold;
+}
+
+.bolded-text{
+  font-weight: bold;
+}
+
+.italicized-text{
+  font-style: italic;
+}
+
+.left-align{
+  text-align: left;
 }
 
 .headline-text-padding{
@@ -94,6 +114,9 @@ p {
   width: 100%;
 }
 
+.uyg-overview-text-padding{
+  padding-top: 15px;
+}
 .no-bottom{
   padding-bottom: 0px;
 }
@@ -196,6 +219,28 @@ a.no-underline{
 .purpleArrowUp {
   display: inline-block;
   background-image: url('../assets/universal/arrow-purple-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:18px;
+  height: 15px;
+  margin:auto;
+  margin-bottom: -3px;
+}
+
+.blueArrowDown {
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-blue-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:18px;
+  height: 15px;
+  margin:auto;
+  margin-bottom: -3px;
+}
+
+.blueArrowUp {
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-blue-up.png');
   background-size: contain;
   background-repeat: no-repeat;
   width:18px;
@@ -446,6 +491,31 @@ a.no-decoration-white {
   width:18px;
   height: 15px;
   margin:auto;
+}
+
+
+.downArrow-clear-btn-style {
+  font-weight: bold;
+  color: #00A1FF;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.downArrow-clear-btn-style:hover {
+  border-bottom-color: #00A1FF;
+  text-decoration: none;
+  color: #0000FF;
+}
+
+.downArrow-clear-btn-style:hover .blueArrowDown {
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-true-blue-down.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:18px;
+  height: 15px;
+  margin:auto;
+  margin-bottom: -3px;
 }
 
 .upArrow-btn-style {
@@ -1378,6 +1448,25 @@ td{
   margin-bottom: -80px;
   margin-left: -65px;
 }
+
+.uyg-header-separator-left{
+  background: url('../assets/our-work/normal/purple-pixel.png');
+  background-position: left bottom;
+  height: 5px;
+  flex-grow: 1;
+  margin-bottom: -132px;
+  margin-right: -76px;
+}
+
+.uyg-header-separator-right{
+  background: url('../assets/our-work/normal/purple-pixel.png');
+  background-position: left bottom;
+  height: 5px;
+  flex-grow: 1;
+  margin-bottom: -132px;
+  margin-left: -76px;
+}
+
  /* Showcase Pages Images*/
 .work-img-offset{
   width: 35%;
@@ -1548,6 +1637,7 @@ blog-data
 .blog-container {
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 5px;
 }
 
 .blog-header {
@@ -1811,6 +1901,13 @@ animation-direction: alternate;
   content: url('https://moti.sanjosemayor.org/wp-content/uploads/2018/10/Housing@1024px.png');
   height: 171px;
 }
+
+/* Learn More buttons */
+
+.learn-more-list-not-visible{
+  display: none;
+}
+
 
 .uyg-competition-btns-container{
   padding-top: 28px;
