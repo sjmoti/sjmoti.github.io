@@ -544,6 +544,30 @@ a.no-decoration-white {
   margin:auto;
 }
 
+.upArrow-clear-btn-style {
+  font-weight: bold;
+  color: #00A1FF;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.upArrow-clear-btn-style:hover {
+  border-bottom-color: #00A1FF;
+  text-decoration: none;
+  color: #0000FF;
+}
+
+.upArrow-clear-btn-style:hover .blueArrowUp {
+  display: inline-block;
+  background-image: url('../assets/universal/arrow-true-blue-up.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:18px;
+  height: 15px;
+  margin:auto;
+  margin-bottom: -3px;
+}
+
 .clear-style{
   color: #00A1FF;
   font-weight: bold;

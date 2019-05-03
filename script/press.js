@@ -74,6 +74,8 @@ function showInfoAll(data) {
 
 		document.getElementById("all-stories-arrow-btn").classList.add('purpleArrowUp');
 		document.getElementById("all-stories-arrow-btn").classList.remove('purpleArrowDown');
+
+		$('#all-stories-btn-text').text('LESS STORIES');
 		clickCounter = 2;
 	} else{
 			
@@ -91,6 +93,8 @@ function showInfoAll(data) {
 		
 		document.getElementById("all-stories-arrow-btn").classList.remove('purpleArrowUp');
 		document.getElementById("all-stories-arrow-btn").classList.add('purpleArrowDown');
+
+		$('#all-stories-btn-text').text('ALL STORIES');
 		clickCounter = 1;
 	}
 	activeTabIndicator();
