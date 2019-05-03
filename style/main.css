@@ -1904,8 +1904,8 @@ animation-direction: alternate;
 
 /* Learn More buttons */
 
-.learn-more-list-not-visible{
-  display: none;
+.learn-more-btn-wrapper{
+  display: inline-block;
 }
 
 
